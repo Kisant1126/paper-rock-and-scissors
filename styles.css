@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    flex: 1;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.mid{
+    flex: 1;
+    background-color: white;
+}
+.footer{
+    flex: 1;
+    background-color: gray;
+}
