@@ -1,22 +1,122 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #5C4A48;
+}
+
+main {
+  height: 50%;
+  width: 50%;
+  min-width: 700px;
+  background-color: #966B70;
+  border: 10px solid #AEA7A3;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ .container{
     display: flex;
-    flex-direction: column;
+    background-color:#BC7D75 ;
+    position:relative;
+    border-radius: 20px;
+    border: 10px solid #AEA7A3;
+    width: 50%;
+    justify-content: space-between;
+    min-width: 700px;
+    }
+#playround,.PlayerSelection,.player,.computer,#continue,#start{    
+    width: 120px;
+    height: 120px;  
+    border: 0px;
+    min-width: 120px;
 }
-.header{
-    flex: 1;
+.player,.computer{
+    background-color: #966B70;
+    border:5px solid #5C4A48;
+}
+#piedra{    
+    background:
+    url(images/piedra.png);
+    background-size: cover;
+}
+#tijera{
+    background:
+    url(images/tijeras.png);
+    background-size: cover;
+}
+#papel{
+    background:
+    url(images/hoja-de-papel.png);
+    background-size: cover;
+}
+#playround{
+    background:url(images/continue.png)
+    center
+    center;
+    background-size:contain;
+}
+#playround:hover ,#papel:hover,#piedra:hover,#tijera:hover,#continue:hover,#start:hover{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -20px;
+    background-color:#966B7090;
+    border-radius: 30%;
+    cursor:pointer;
+}
+.important {
+    font-size: 70px;
+    font-family:trebuchet MS ;
+    display: block;
+}
+.invisible{
+    display:none;
+    gap:80px;
+    font-size:70px ;
+    font-family:trebuchet MS ;
+}
+#continue{
+    background-color:#BC7D75;
+    display: none;
+    border: 2x solid black;
+    cursor: pointer;
+    align-self: center;
+}
+.uwu{
+    display: none;
+}
+.recurso{
+    display: none;
+    background-color:#BC7D75 ;
+    position:relative;
+    width: 50%;
+    justify-content: space-between;
+    min-width: 700px;
+}
+#continue,#start{
+    font-size: large;
+    font-weight: 900;
+}
+#start{
+    background-color:#BC7D75;
+    display: block;
+}
+#container{
     display: flex;
-    align-content: center;
-    align-items: center;
-    background-color: gray;
-}
-.mid{
-    flex: 1;
-    background-color: white;
-}
-.footer{
-    flex: 1;
-    background-color: gray;
-}
+    background-color:#BC7D75 ;
+    position:relative;
+    width: 50%;
+    justify-content: center;
+    min-width: 700px;
+    }
+    .champion{
+        color: white;
+    }

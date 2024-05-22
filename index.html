@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="header">
-    <h1>
-       pruebas javascript 
-    </h1>
-</header>
-    <script src="main.js"></script>
-    <div class="mid">
-
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="champion">Wins player: 0 - Wins computer: 0</h1>
+    <main>
+      <h1 class="important">player vs computer</h1>
+      <h1 class="invisible2"></h1>
+      <h1 class="invisible">
+        <img class="player" />vs <img class="computer" />
+      </h1>
+    </main>
+    <div class="container">
+      <section class="recurso">
+        <button class="PlayerSelection" id="piedra"></button
+      ><button class="PlayerSelection tijera" id="tijera"></button
+      ><button class="PlayerSelection papel" id="papel"></button
+      ><button id="playround"></button>
+      </section>
+      <button id="continue">Continue</button>
+      <div id="container"><button id="start">Start</button></div>
     </div>
-    <footer class="footer">
-
-    </footer>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
